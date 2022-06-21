@@ -5,16 +5,19 @@
 </head>
 <body>
 <form>
-    <label for="pswd">Enter your password: </label>
+    <label for="usrnm">Enter your Username: </label>
+    <input type="password" id="usrnm">
+    <label for="pswd">Enter your Password: </label>
     <input type="password" id="pswd">
     <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
-<!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "admin";
+        var confirmPassword = "123456";
         var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
+        var confirmUser = "Aydin_Coder";
+        var username = document.getElementById("usrnm").value;
+        if (password == confirmPassword) && (username == confirmUser) {
              window.location="welcome.html";
         }
         else{
