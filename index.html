@@ -1,26 +1,37 @@
  <!DOCTYPE html>
 <style>
  body{
-  background-color: #1E90FF;
+  background-color: white;
   text-align: center;
  }
  h1{
   font-family: sans-serif;
   color: white;
  }
+ input{
+   
+ }
+ button {   
+       background-color: #1E90FF;   
+       width: 100%;  
+        color: Black;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+  }   
+ 
 </style>
 <html>
 <head>
     <title>Aydin Tech Login</title>
- <h1>Aydin tech Login</h1>
+    <marquee behavior="scroll"> <font size="+10"> <a2> Welcome to Aydin's Website </a2> </font></marquee>
 </head>
 <body>
 <form>
-    <label for="usrnm">Enter your Username: </label>
-    <input id="usrnm">
+    <input id="usrnm" placeholder="Enter Username" name="username" required>
     <p> </p>
-    <label for="pswd">Enter your Password: </label>
-    <input type="password" id="pswd">
+    <input type="password" id="pswd" placeholder="Enter Password" name="password" required>
     <p> </p>
     <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
