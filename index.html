@@ -20,8 +20,13 @@
         var password = document.getElementById("pswd").value;
         var confirmUser = "Aydin_Coder";
         var username = document.getElementById("usrnm").value;
-        if (password == confirmPassword) && (username == confirmUser) {
+        if (password == confirmPassword) {
+         if (username == confirmUser) {
              window.location="welcome.html";
+         }
+         else{
+            alert("Incorrect Username or Password.");
+         }
         }
         else{
             alert("Incorrect Username or Password.");
